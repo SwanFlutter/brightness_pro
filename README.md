@@ -10,7 +10,7 @@ This package allows you to adjust the screen brightness using drag and slider fu
 
 ```yaml
 dependencies:
-  brightness_pro: ^0.0.4
+  brightness_pro: ^0.0.5
 ```
 
 ## How to use
