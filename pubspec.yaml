@@ -1,6 +1,6 @@
 name: brightness_pro
 description: "This package allows you to adjust the screen brightness using drag and slider functionalities."
-version: 0.0.3
+version: 0.0.4
 homepage: https://github.com/SwanFlutter/brightnessPro.
 
 environment:
