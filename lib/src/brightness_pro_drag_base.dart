@@ -5,9 +5,9 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:screen_brightness/screen_brightness.dart';
+
 /// [BrightnessProDragDirection] This class represents a custom widget that displays a draggable brightness control
 class BrightnessProDragDirection extends StatefulWidget {
-
   /// [width] : The width of the widget. Defaults to 50.
   final double width;
 
@@ -41,7 +41,8 @@ class BrightnessProDragDirection extends StatefulWidget {
       _BrightnessProDragDirectionState();
 }
 
-class _BrightnessProDragDirectionState extends State<BrightnessProDragDirection> {
+class _BrightnessProDragDirectionState
+    extends State<BrightnessProDragDirection> {
   double _brightnessLevel = 0.5;
   final double _brightnessIncrement = 0.05;
   double _opacityIcons = 0;
@@ -51,11 +52,11 @@ class _BrightnessProDragDirectionState extends State<BrightnessProDragDirection>
   Future<void> setBrightness(double brightness) async {
     try {
       double brightnessValue =
-      brightness.clamp(0.0, 0.95); // Clamp the value between 0 and 0.9
+          brightness.clamp(0.0, 0.95); // Clamp the value between 0 and 0.9
       await ScreenBrightness().setScreenBrightness(brightnessValue);
       setState(() {
         _brightnessLevel =
-        (brightnessValue * 100); // Convert to a percentage for display
+            (brightnessValue * 100); // Convert to a percentage for display
       });
     } catch (e) {
       if (kDebugMode) {

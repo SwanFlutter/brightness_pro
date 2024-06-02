@@ -10,13 +10,12 @@ This package allows you to adjust the screen brightness using drag and slider fu
 
 ```yaml
 dependencies:
-  brightness_pro: ^0.0.3
+  brightness_pro: ^0.0.4
 ```
 
 ## How to use
 
 ```dart
-import 'package:brightness_pro/brightness_pro_drag.dart';
 
 import 'package:brightness_pro/brightness_pro_slider.dart';
 
@@ -29,12 +28,16 @@ BrightnessProSlider()
 ```
 
 ```dart
-BrightnessProSlider(display: Display.HORIZONTAL),                          
+BrightnessProSlider(display: Display.horizantal),                          
 ```
 
 
 ```dart
-BrightnessProDragDirection()
+BrightnessProSlider.brightnessProDragDirection()
+```
+
+```dart
+BrightnessProSlider.brightnessProSlideBottom(),
 ```
 
 
